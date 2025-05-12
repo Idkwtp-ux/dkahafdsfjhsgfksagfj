@@ -122,6 +122,7 @@
  <nav>
 <div><a href="index.html">Lucky's Boutique</a></div>
 <div>
+<a href="#panier">🛒 <span id="compteur-panier">0</span></a>
 <a href="index.html">Accueil</a>
 <a href="contact.html">Contact</a>
 </div>
@@ -152,11 +153,13 @@
     let total = 0;
  
     function ajouterAuPanier(nom, prix) {
-      panier.push({ nom, prix });
-      total += prix;
-      afficherPanier();
-    }
- 
+  panier.push({ nom, prix });
+  total += prix;
+  afficherPanier();
+  document.getElementById("compteur-panier").textContent = panier.length;
+  alert(`${nom} a été ajouté au panier !`);
+}
+
     function afficherPanier() {
       const liste = document.getElementById("liste-panier");
       liste.innerHTML = "";
