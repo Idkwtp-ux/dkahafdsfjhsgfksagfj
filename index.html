@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pièces à vendre</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    * {
+      box-sizing: border-box;
+    }
+ 
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+ 
+    nav {
+      background-color: #007bff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+ 
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+ 
+    nav a:hover {
+      text-decoration: underline;
+    }
+ 
+    h1 {
+      text-align: center;
+      padding: 30px 20px 10px;
+      font-size: 2rem;
+    }
+ 
+    .produits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+ 
+    .carte {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+ 
+    .carte:hover {
+      transform: translateY(-5px);
+    }
+ 
+    .carte img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+ 
+    .carte h3 {
+      margin: 15px 10px 5px;
+      font-size: 1.1rem;
+    }
+ 
+    .carte p {
+      margin: 0 10px 10px;
+      font-weight: bold;
+    }
+ 
+    .carte button {
+      display: block;
+      width: calc(100% - 20px);
+      margin: 10px auto 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+ 
+    .carte button:hover {
+      background-color: #218838;
+    }
+ 
+    #panier {
+      margin: 40px auto;
+      text-align: center;
+      padding: 20px;
+      max-width: 600px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+ 
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+ 
+  <nav>
+<div><a href="index.html">Lucky's Boutique</a></div>
+<div>
+<a href="index.html">Accueil</a>
+
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+ 
+  <h1>Voici mes pièces à vendre !</h1>
+ 
+  <div class="produits">
+<div class="carte">
+<img src="https://th.bing.com/th/id/OIP.irgohHI7BrNnw_3Tb4E0YAHaFj?rs=1&pid=ImgDetMain" alt="Article 2">
+<h3>Pgo Big Max</h3>
+<a href="pgo.html">
+  <button>PGO BigMax</button>
+</a>
+
+</div>
+<div class="carte">
+<img src="https://th.bing.com/th/id/R.2d1073152aa2f165d31bf3f6d1ae284c?rik=jbJaGfeuu6KR0Q&riu=http%3a%2f%2fmotos.brick7.com.co%2fmedia%2fco%2f1615901_1616000%2f1615996_4945cf229d1f6cfc.jpg&ehk=hf0vJLj8t0n%2fQ7xEIXx3UseLkJUkNdB0qBNI9a2NofA%3d&risl=&pid=ImgRaw&r=0" alt="Article 3">
+<h3>yamaha</h3>
+<a href="yamaha.html">
+  <button>yamaha</button>
+</a>
+
+</div>
+</div>
+ 
+ </body>
+</html>
